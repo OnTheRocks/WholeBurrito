@@ -7,7 +7,6 @@ var burrito = {
       cb(res);
     });
   },
-
   create: function(cols, vals, cb) {
     orm.create("burritos", cols, vals, function(res) {
       cb(res);
@@ -24,6 +23,5 @@ var burrito = {
     });
   }
 };
-
 
 module.exports = burrito;
