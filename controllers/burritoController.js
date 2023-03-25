@@ -1,7 +1,5 @@
 var express = require("express");
-
 var router = express.Router();
-
 var cat = require("../models/burritos.js");
 
 // Create the routes and associated logic
@@ -27,7 +25,6 @@ router.post('/burritos', function(req, res) {
 
 router.put('/burrito/:id', function(req, res) {
   var condition = 'id = ' + req.params.id;
-
   burrito.updateOne({
     devoured: true
   }, condition, function(data) {
